@@ -1,4 +1,6 @@
-# 适用于amd cpu,macos ventura opencore 配置
+# 适用于amd cpu
+# macos ventura 
+# opencore 配置
 
 
 确认能使用:
