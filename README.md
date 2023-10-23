@@ -4,9 +4,7 @@
 
 # 物理机:技嘉 x570 aorus master
 (修改自:https://github.com/luchina-gabriel/EFI-GIGABYTE-X570-AORUS-MASTER-5950X-RX-580)
-
 已知问题:
-
 1,不能睡眠,系统要禁用睡眠,否则可能会不能唤醒,也可能会在睡眠时就死机
 
 2,Intel I211 网卡不能使用,原仓库中的补丁直接不能用,启用网卡就死机,
