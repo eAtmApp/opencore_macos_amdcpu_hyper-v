@@ -1,13 +1,16 @@
 # 适用于amd cpu,macos ventura , opencore 配置
 
-确认能使用:
--------------------------------
+# 虚拟机:vmware16/17
 
-虚拟机:vmware16/17,Proxmox VE8
+# 物理机:技嘉 x570 aorus master
+(修改自:https://github.com/luchina-gabriel/EFI-GIGABYTE-X570-AORUS-MASTER-5950X-RX-580)
 
-物理机:技嘉 x570 aorus master (修改自:https://github.com/luchina-gabriel/EFI-GIGABYTE-X570-AORUS-MASTER-5950X-RX-580)
+已知问题:
 
-x570主板音频接口还是对不上,但不影响声音,麦没试出来.
+1,不能睡眠,系统要禁用睡眠,否则可能会不能唤醒,也可能会在睡眠时就死机
+
+2,Intel I211 网卡不能使用,原仓库中的补丁直接不能用,启用网卡就死机,
+  后来换了个AppleGB的补丁,这个补丁更痛苦,看着能用,会不定时的死机,排查禁用后没再死机过
 
 蓝牙不能用,IntelBTPatcher.kext补丁包有问题,
 
